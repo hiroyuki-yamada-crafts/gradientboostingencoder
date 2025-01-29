@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=64.0", "scikit-learn"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "GradientBoostingEncoder"  # gradientboostingencoder.__package__の値を入れてください
+version = "0.0.1"  # gradientboostingencoder.__version__の値を入れてください
+description = "Gradient Boosting Encoder"  # gradientboostingencoder.description_の値を入れてください
+authors = [
+    {name = "maruyama"}  # gradientboostingencoder.author_の値を入れてください
+]
+readme = "README.md"  # README.mdファイルがある場合
+license = {text = "MIT"}
+requires-python = ">=3.11"
+dependencies = [
+    "scikit-learn",
+]
+
+[tool.setuptools]
+packages = ["gradientboostingencoder"]
+include-package-data = false
